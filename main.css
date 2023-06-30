@@ -1,0 +1,171 @@
+body {
+    background: rgb(2, 0, 36);
+    background: linear-gradient(90deg, rgba(2, 0, 36, 1) 0%, rgba(9, 9, 121, 1) 35%, rgba(0, 212, 255, 1) 100%);
+    font-family: "Kanit", sans-serif;
+    font-size: larger;
+    text-decoration: none;
+    color: white;
+}
+
+.header {
+    padding: 30px;
+    text-align: center;
+    background: rgb(2, 0, 36);
+    background: linear-gradient(90deg, rgba(2, 0, 36, 1) 0%, rgba(9, 9, 121, 1) 35%, rgba(0, 212, 255, 1) 100%);
+    font-size: larger;
+    color: White;
+    font-size: 30px;
+    font-family: "charm";
+}
+
+.navbar {
+    overflow: hidden;
+    background: rgb(2, 0, 36);
+    background: linear-gradient(90deg, rgba(2, 0, 36, 1) 0%, rgba(9, 121, 61, 1) 35%, rgba(0, 212, 255, 1) 100%);
+    position: fixed;
+    top: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    float: left;
+}
+
+
+.navbar a {
+    float: left;
+    display: block;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+
+
+
+.navbar a:hover {
+    background: #ddd;
+    color: black;
+}
+
+
+.main {
+    margin-top: 30px;
+}
+
+.img {
+    display: flex;
+    justify-content: right;
+    align-items: right;
+    float: right;
+
+}
+
+.box {
+    height: 200px;
+    width: 300px;
+    background: rgb(2, 0, 36);
+    background: linear-gradient(90deg, rgba(2, 0, 36, 1) 0%, rgba(9, 121, 61, 1) 35%, rgba(0, 212, 255, 1) 100%);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+
+.square {
+    height: 200px;
+    width: 300px;
+    background-color: white;
+    border: rgb(0, 0, 0) 3px solid;
+    margin: 5px;
+    float: right;
+}
+
+.star {
+    display: flex;
+    position: relative;
+    clip-path: circle(50% at 50% 50%);
+    background: black;
+    height: 100px;
+    width: 100px;
+    margin: auto;
+}
+
+.star_blink {
+    animation: star 1s linear infinite;
+}
+
+@keyframes star {
+    from {
+        rotate: 0deg;
+        opacity: 1;
+    }
+
+    to {
+        rotate: 360deg;
+        opacity: 0.5;
+    }
+}
+
+a:link {
+    color: white;
+}
+
+.circle {
+    height: 75px;
+    width: 75px;
+    background: rgb(255, 255, 255);
+    border: rgb(63, 30, 141) 1px solid;
+    animation: move-right infinite 2s linear;
+}
+
+@keyframes move-right {
+    from {
+        transform: translateX(0px);
+    }
+
+    to {
+        transform: translateX(500px);
+        border-radius: 50%;
+    }
+}
+
+/* unvisted link */
+a:link {
+    color: lightgreen;
+}
+
+/* visited link */
+a:visited {
+    color: lightgreen;
+}
+
+/* mouse over link */
+a:hover {
+    color: lightgreen;
+}
+
+/* selected link */
+a:active {
+    color: lightgreen;
+}
+
+@media screen and (max-width: 1024px) and (min-width: 600px) {
+    .box {
+        width: 75%;
+        height: 75%;
+    }
+}
+
+@media screen and (max-width: 1024px) and (min-width: 600px) {
+    .img {
+        width: 75%;
+        height: 75%;
+    }
+}
+
+.animation {
+    justify-content: right;
+    align-items: right;
+}
